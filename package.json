@@ -21,6 +21,9 @@
     "@types/node": "^20.14.2",
     "compression": "^1.7.4",
     "helmet": "^7.1.0",
-    "morgan": "^1.10.0"
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0",
+    "os": "^0.1.2",
+    "process": "^0.11.10"
   }
 }

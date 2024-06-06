@@ -11,8 +11,9 @@ app.use(helmet())
 app.use(compression())
 
 // init db
-
-
+require('./dbs/init.mongodb')
+const { checkOverload } = require('./helpers/check.connect');
+checkOverload()
 // app routes
 app.get('/', (req, res, next) => {
     const strCompress = 'hello fantipjs'

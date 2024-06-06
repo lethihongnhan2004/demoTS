@@ -11,6 +11,8 @@ app.use(helmet());
 app.use(compression());
 
 // init db
+import './dbs/init.mongodb';
+
 
 // app routes
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
